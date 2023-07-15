@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+:root {
+    /********************COLORS*******************/
+    
+    /*PRIMARY*/
+    --Cyan: hsl(180, 66%, 49%);
+    --CyanHover :hsl(180, 61%, 69%);
+    --DarkViolet: hsl(257, 27%, 26%);
+
+    /*SECONDARY*/
+    --Red: hsl(0, 87%, 67%);
+
+   /*   Neutral */
+    --Gray: hsl(0, 0%, 75%);
+    --lightGray :#f0f1f6;
+    --GrayishViolet: hsl(257, 7%, 63%);
+    --VeryDarkBlue: hsl(255, 11%, 22%);
+    --VeryDarkViolet: hsl(260, 8%, 14%);
+  }
+
+*{
+    padding: 0;
+    margin:0;
+}
+a{
+    text-decoration: none;
+}
+button .copied{
+    background-color: (257, 27%, 26%);
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    width: 100vw;
+}
+header{
+        width: 80%;
+    padding: 10vw 8vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.link{
+    color: var(--Gray);
+/*     text-decoration: none;
+ */}
+.blueButton{
+    background-color: var(--Cyan);
+    text-decoration: none;
+    color: white;
+    padding: 12px;
+    border-radius: 22px;
+}
+
+#presentationContainer{
+    display: flex;
+    padding: 10vw 8vw 0 8vw;
+
+}
+#presentationText{
+    display: flex;
+    height: 300px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#presentationText > * {
+    text-align: center;
+}
+#researchContainer{
+    display: flex;
+    justify-content: space-between;
+    margin: 10vw 8vw 0 8vw;
+    background-image: url(images/bg-boost-desktop.svg);
+    background-color: var(--DarkViolet);
+    padding: 8vw;
+    flex-direction: column;
+    height: 118px;
+    border-radius: 10px;
+}
+.hiden{
+    display: none;
+}
+footer{
+    background-color: var(--VeryDarkViolet);
+   
+}
+footer #footerLogo svg path{
+    fill: white;
+}
+
+.cardIcon svg {
+    position: absolute;
+    transform: translate(-10vw, -10vh);
+    background-color: hsl(257, 27%, 26%);
+    padding: 10px;
+    border-radius: 40px;
+}
+#outputContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--lightGray);
+}
+.outputCard{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+   
+    padding: 8vw;
+    border-radius: 10px;
+}
+.outputCard > *{
+    width: 68vw;
+    text-align: center;
+   
+}
+
+.inputUrl{
+    border-bottom: 2px solid var(--lightGray);
+    padding-bottom: 8vw;
+}
+.outputUrl{
+    padding: 8vw 0;
+    color: var(--Cyan);
+}
+input{
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+}
+a:hover{
+    color: var(--Cyan);
+}
+.blueButton:hover{
+    background-color: var(--CyanHover);
+    color: white;
+    cursor: pointer;
+}
+input:focus{  
+    outline: none !important;
+
+   }
+   button{
+    padding: 12px;
+    border-radius: 5px;
+    background-color: var(--Cyan);
+    color: white;
+    border: none;
+}
+button:hover{
+    background-color: var(--CyanHover);
+    cursor: pointer;
+}
+#statisticDescContainer{
+    text-align: center;
+    padding: 10vw 8vw 10vw 8vw;
+    background-color: var(--lightGray);
+    margin-top: 10vw;
+}
+#timeline{
+    background-color: var(--lightGray);
+    display: flex;
+    align-items: center;
+
+    height: 117vh;
+    justify-content: space-around;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 35vw;
+    width: 65vw;
+    background-color: white;
+    border-radius: 10px;
+    padding: 8vw;
+}
+.cardDesc{
+    text-align: center;
+}
+#endMain{
+    background-image: url(images/bg-boost-mobile.svg);
+    height: 153px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--DarkViolet);
+ 
+}
+#endMain h2{
+    color: white;
+}
+#socialMediaContainer svg path:hover{
+    fill: var(--Cyan);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 375px) {
+    .showMenu {
+        background-color: var(--DarkViolet);
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        height: 200px;
+        align-items: center;
+        padding: inherit;
+        justify-content: space-evenly;
+        border-radius: 10px;
+        margin-left: 6vw;
+        margin-top: 5vh;
+    }
+.hiden{
+    display: none;
+}
+
+#presentationContainer{
+    flex-direction: column-reverse;
+    padding: 0vw 8vw 0 8vw;
+ 
+}
+
+.outputCard{
+    height: 118px;
+}
+
+#navigationLinks{
+    display: flex;
+    height: 60%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#logInLinks{
+    display: flex;
+    height: 40%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+footer{
+    display: flex;
+    padding: 10vw 8vw;
+    flex-direction: column;
+    text-align: center;
+    height: 142vw;
+    justify-content: space-evenly;
+}
+.footerLinks{
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    color: white;
+    justify-content: space-evenly;
+}
+.footerLink {
+    font-weight: lighter;
+    color: white;
+    font-size: small;
+}
+.footerLinkTitle{
+    font-weight: bold;
+}
+#socialMediaContainer{
+    display: flex;
+    align-items: center;
+    padding: 10vw 8vw 10vw 8vw;
+    justify-content: space-evenly;
+}
+#outputContainer{
+    padding: 10vw 8vw 0 8vw;
+
+}
+#timeline{
+    flex-direction: column;
+}
+
+}
+@media only screen and (min-width: 376px) {
+    header{
+        width: 80%;
+        padding: 4vw 8vw 0 8vw;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    #scrollMenu{
+        display: flex;
+    width: 100%;
+    align-items: center;
+    }
+ 
+#burgerMenu{
+    display: none;
+}
+#navigationLinks{
+    width: 48%;
+    display: flex;
+    justify-content: space-around;
+}
+#logInLinks{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: flex-end;
+}
+#login{
+    margin-right: 10%;
+}
+#presentationContainer{
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    padding: 4vw 8vw 0 8vw;
+  
+
+}
+.diplayScrollMenu{
+    display: flex;
+    width: 87%;
+    align-items: center;
+    justify-content: space-between;
+}
+#researchContainer{
+    margin: 4vw 8vw 0 8vw;
+    height: 65px;
+    padding: 4vw;
+    flex-direction: row;
+}
+input{
+    width: 75%;
+    font-size: 32px;
+  
+}
+button{
+    width: 20%;
+    font-size: x-large;
+    font-weight: bold;
+}
+#statisticDescContainer{
+    margin-top: 0;
+}
+#timeline{
+    flex-direction: row;
+    height: 73vh;
+    justify-content: space-between;
+    padding: 7vw;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 30vh;
+    width: 17vw;
+    background-color: white;
+    border-radius: 10px;
+    padding: 4vw;
+}
+#card2{
+    position: absolute;
+  
+    transform: translate(30vw,4vh);
+}
+#card3{
+    position: absolute;
+    transform: translate(60vw,8vh);
+}
+.cardIcon svg{
+    position: absolute;
+    transform: translate(-3vw, -14vh);
+    background-color: hsl(257, 27%, 26%);
+    padding: 27px;
+    border-radius: 51px;
+}
+#statisticDescContainer{
+    padding: 10vw 8vw 0vw 8vw;
+}
+#statDesc{
+    font-size: xxx-large;
+}
+.blueButton{
+    padding: 20px;
+    border-radius: 34px;
+    font-size: x-large;
+}
+.outputCard{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2vw;
+    height: 16vh;
+    width: 80%;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+.rightOutputContainer{
+    display: flex;
+    width: 78%;
+    align-items: center;
+    justify-content: flex-end;
+    padding:0;
+}
+.inputUrl{
+    border: none;
+    padding:0;
+
+    width:auto;
+}
+#outputContainer{
+    padding: 3vh;
+}
+.copyButton{
+    padding: 1.5vw;
+    margin-left: 3vw;
+}
+#endMain{
+    height: 31vh;
+}
+#endMain h2{
+    font-size: xx-large;
+
+  
+}
+footer{
+    display: flex;
+    padding: 4vw;
+    text-align: center;
+    height: 25vh;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.footerLinks{
+    display: flex;
+    flex-direction: column;
+    height: 66%;
+    color: white;
+    justify-content: space-around;
+}
+.footerLink {
+    font-weight: lighter;
+    color: white;
+    font-size: small;
+}
+.footerLinkTitle{
+    font-weight: bold;
+}
+#socialMediaContainer{
+    display: flex;
+    align-items: center;
+    width: 18vw;
+    justify-content: space-evenly;
+}
+
+}
