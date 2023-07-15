@@ -123,12 +123,11 @@ input.addEventListener("keypress", (event) => {
         const urlPattern = /^(https?:\/\/)?([^\s./]+\.[^\s]{2,}|www\.[^\s]+\.[^\s]{2,})$/i;
         if (urlPattern.test(input.value)) {
           console.log("Valid URL");
-          input.style.border = "none"; // Réinitialiser la bordure à aucun
+          input.style.border = "none"; 
           statisticDescContainer.style.marginTop = "0";
           shortUrl();
         } else {
           console.log("Invalid URL");
-          // Ajoutez ici votre code pour gérer un URL invalide
         }
       }
     }
