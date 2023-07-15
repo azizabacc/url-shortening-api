@@ -108,8 +108,7 @@ const shortUrl = () => {
            outputCard.append(rightOutputContainer)
            outputContainer.append(outputCard)
            outputContainerHeight +=200;
-/*            outputContainer.style.height= `${outputContainerHeight*100/window.innerHeight}vh`;
-*/           outputContainer.style.height= `${outputContainerHeight}px`;
+           outputContainer.style.height= `${outputContainerHeight}px`;
 
         })
         .catch(error => {
